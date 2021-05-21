@@ -1,0 +1,94 @@
+input, button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.login-form {
+    display: block;
+    position: relative;
+}
+
+.login-form:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #16BFFD, #CB3066);
+}
+
+.inner-form {
+    position: relative;
+    display: block;
+    background-color: antiquewhite;
+    padding: 30px;
+    z-index: 2;
+}
+
+.inner-form h2 {
+    color: #5c5c5c;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.inner-form .form-group label {
+    display: block;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+
+.inner-form .form-group:focus-within label {
+    color: #486ffe;
+    font-weight: bold;
+}
+
+.inner-form .form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.inner-form .form-group input:focus {
+    box-shadow: 0 0 5px #486ffe;
+}
+
+.inner-form button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background-image: linear-gradient(to right, #16BFFD 50%, #16BFFD 50%, #CB3066);
+    background-size: 200%;
+    background-position: 0;
+    transition: .4s;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.inner-form button:hover {
+    background-position: 100% 0;
+}
