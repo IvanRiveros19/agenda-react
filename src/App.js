@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "./redux/store";
 
-import Login from "./components/Login/Login";
+import Login from "./components/SignIn/Login.jsx";
 
 function App() {
     return (
